@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "clearvue",
+    "slug": "clearvue",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "backgroundColor": "#222222",
+    "icon": "./src/assets/images/clearvueimg.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./src/assets/images/clearvueimg.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "permissions": ["VIBRATE"],
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/clearvueimg.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
