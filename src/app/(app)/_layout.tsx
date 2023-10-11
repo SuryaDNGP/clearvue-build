@@ -80,7 +80,7 @@ const ScreensLayout = () => {
       drawerContent={(props) => <CustomDrawer {...props} />}
     >
       <Drawer.Screen name="dashboard" options={{ drawerLabel: "Dashboard" }} />
-      <Drawer.Screen name="home" />
+      <Drawer.Screen name="home" options={{ drawerLabel: "Home", drawerItemStyle:{display: 'none'} }} />
     </Drawer>
   );
 };
