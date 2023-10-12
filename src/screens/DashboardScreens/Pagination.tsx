@@ -42,7 +42,7 @@ const PaginationItem: React.FC<{
     };
   }, [animValue, index, length]);
   return (
-    <Pressable  onPress={() => handlePage.current.scrollTo({index: index})}>
+    <Pressable onPress={() => handlePage.current.scrollTo({index: index})}>
       <View
         style={{
           backgroundColor: "white",

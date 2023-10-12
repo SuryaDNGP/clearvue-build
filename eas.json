@@ -13,7 +13,10 @@
     },
     "preview": {
       "distribution": "internal",
-      "extends": "base"
+      "extends": "base",
+      "android": {
+        "buildType": "apk"
+      }
     },
     "production": {
       "extends": "base"

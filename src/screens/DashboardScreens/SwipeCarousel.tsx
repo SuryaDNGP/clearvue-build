@@ -109,7 +109,7 @@ const SwipeCarousel = () => {
               <Box position="relative">
                 <ProgressCircle
                   style={{ height: 100, width: 100 }}
-                  progress={progressValue.value}
+                  progress={0.8}
                   progressColor={item.chartColor}
                   backgroundColor={item.bgColor}
                 />
