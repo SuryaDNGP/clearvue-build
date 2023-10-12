@@ -1,4 +1,4 @@
-import { Button } from "@gluestack-ui/themed";
+import { Button, Pressable } from "@gluestack-ui/themed";
 import { View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import Animated, {
@@ -42,7 +42,7 @@ const PaginationItem: React.FC<{
     };
   }, [animValue, index, length]);
   return (
-    <TouchableOpacity onPress={() => handlePage.current.scrollTo({index: index})}>
+    <Pressable  onPress={() => handlePage.current.scrollTo({index: index})}>
       <View
         style={{
           backgroundColor: "white",
@@ -61,6 +61,7 @@ const PaginationItem: React.FC<{
         
           style={[
             {
+              padding: 5,
               borderRadius: 50,
               backgroundColor,
               flex: 1,
@@ -69,7 +70,7 @@ const PaginationItem: React.FC<{
           ]}
         />
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 
