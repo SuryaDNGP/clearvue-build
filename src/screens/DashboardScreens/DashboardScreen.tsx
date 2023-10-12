@@ -8,8 +8,12 @@ import {
   HStack,
   AddIcon,
   FlatList,
-  ScrollView
+  ScrollView,
+  TableContainer,
+  Table
+
 } from "@gluestack-ui/themed";
+
 import { View } from "@gluestack-ui/themed";
 import { LinearGradient } from "expo-linear-gradient";
 import { COLORS } from "../../constants";

@@ -89,6 +89,7 @@ const SwipeCarousel = () => {
       </Swiper> */}
 
       <Carousel
+        
         ref={swiper}
         loop={false}
         width={width - 18}
@@ -101,6 +102,7 @@ const SwipeCarousel = () => {
           (progressValue.value = absoluteProgress)
         }
         data={data}
+        overscrollEnabled= {false}
         scrollAnimationDuration={100}
         onSnapToItem={(index) => console.log("current index:", index)}
         renderItem={({ item, index }) => (
